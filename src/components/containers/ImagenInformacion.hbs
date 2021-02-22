@@ -4,12 +4,21 @@
 
 <div  class=" m-5 md:flex-col lg:flex-row flex flex-col  p-5" >
     <!--El style es para que se vea el contenedor-->
-    {{#> containers/Imagen}}
+    {{#> containers/Imagen
+        Enlace="https://github.com/gustavo-exe/ElementoDeProductoFord/blob/Main/img_src/FordRanger.jpg?raw=true"
+    }}
         
     {{/containers/Imagen}}
     
     <!--Aqui tiene que ir el de informacion-->
-    {{#> containers/Informacion}}
+    {{#> containers/Informacion 
+    Marca="Ford"
+    Modelo=" Ranger Raptor"
+    Cuerpo= "No es una pick-up normal y corriente. Es una pick-up completamente excepcional. 
+        Se ha creado para ofrecer al maximo renidimiento todoterreno. Un vehiculo diseñado 
+        desde cero para dominar cualquier entorno es inigualable."
+    Precio= "$200,000"
+    }}
 
     {{/containers/Informacion}}
 

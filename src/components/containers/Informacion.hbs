@@ -3,14 +3,12 @@
     <div>
     <!--Usando br y p para saltos de linea-->
 
-        <h1 class="text-4xl" >Ford<span class="font-bold">Ranger Raptor</span></h1><br>
+        <h1 class="text-4xl" >{{Marca}}<span class="font-bold">{{Modelo}}</span></h1><br>
         <p class="md:text-3xl md:my-5" style="">
-        No es una pick-up normal y corriente. Es una pick-up completamente excepcional. 
-        Se ha creado para ofrecer al maximo renidimiento todoterreno. Un vehiculo diseñado 
-        desde cero para dominar cualquier entorno es inigualable
+            {{Cuerpo}}
         </p>
         <p class="font-bold my-5 text-2xl">
-            $200,000
+            {{Precio}}
         </p> 
 
     </div>
@@ -22,7 +20,7 @@
         </button>
         <!-- Boton Agregar-->
         <button href="#" class=" font-bold mx-4 rounded-full h-12 w-12  bg-blue-300 text-white" >
-           +
+            +
         </button>
 
     </div>
