@@ -1,10 +1,26 @@
 # Producto Ford
 
 ## Acerca del proyecto
-Diseñamos una plantilla tomando como referencia la estructura de **Proyect Boilerplate** y usamos Tailwind CSS para construir el diseño.
+Diseñamos una plantilla de un produto con sus detalles y para poder realizar la compra del mismo para contruirlo usamos una plantilla de un framework creado por [Orlando José Betancourth A](https://github.com/obetancourthunicah) con diferentes tecnologias como: handlebars, tailwind css... para construir el diseño.
 
+Los cambios se encuentran en la ruta: **localhost:8080/product.html**
 
+## Mockup
+![Mockup](./img_src/MockupProductoFord.jpg)
 
+## Antes de comenzar
+1. Ejecutar el siguente comando, para instalar los modulos y administrar las dependencias.
+```bash
+npm install
+```
+2. Ejecutar este comando por si se llega a tener problemas con la carga del diseño.
+```bash
+npm install --save-dev autoprefixer
+```
+3. Inicar el proyecto.
+```bash
+npm start
+```
 ## Integrantes:
 
 Owen Ariel Valle Turcios 
