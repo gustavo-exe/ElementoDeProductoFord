@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="main.css"/>
-    <title>Inicio</title>
+    <title>About</title>
 </head>
 
 <body class="min-h-screen flex flex-col">
@@ -85,10 +85,69 @@
       </script>
   </header>
   <main class="container mx-auto flex-grow">
-    <section class="p-8 relative">
-      <img alt="cat gourmet" src="imgs/g593.png"  class="p-8"/>
-      <h1 class="absolute object-right-bottom">Start Coding</h1>
+        <!--Contenedor de la imagen y la informacion-->
+<!--
+    Contenedor de la imagen e informacion
+-->
+
+<div  class=" m-5 md:flex-col lg:flex-row flex flex-col  p-5" >
+    <!--El style es para que se vea el contenedor-->
+<!--
+    Use flex-1 para que abarque el espacio del contenedor si se agraga otro tiene
+    que ser igual(flex-1) para que compartan el mismo espacio
+-->
+<div class="flex-1 flex  items-center m-2 bg-white-400">
+    <img src="https://github.com/gustavo-exe/ElementoDeProductoFord/blob/Main/img_src/FordRanger.jpg?raw&#x3D;true" alt="RAPTOR">
+</div>    
+    <!--Aqui tiene que ir el de informacion-->
+<div class="flex-1 m-2 p-10 bg-gray-100">
+    <!--Div para la descripcion-->
+    <div>
+    <!--Usando br y p para saltos de linea-->
+
+        <h1 class="text-4xl" >Ford<span class="font-bold"> Ranger Raptor</span></h1><br>
+        <p class="md:text-3xl md:my-5" style="">
+            No es una pick-up normal y corriente. Es una pick-up completamente excepcional. 
+        Se ha creado para ofrecer al maximo renidimiento todoterreno. Un vehiculo diseñado 
+        desde cero para dominar cualquier entorno es inigualable.
+        </p>
+        <p class="font-bold my-5 text-2xl">
+            $200,000
+        </p> 
+
+    </div>
+    <!--Div para los botones de agregar y comprar golem.-->
+    <div class=" items-center flex flex-row " >
+        <!-- Boton comprar-->
+        <button href="#" class=" w-90 border  rounded shadow-sm text-base font-medium text-white p-3 bg-blue-300  " >
+            Comprar
+        </button>
+        <!-- Boton Agregar-->
+        <button href="#" class=" font-bold mx-4 rounded-full h-12 w-12  bg-blue-300 text-white" >
+            +
+        </button>
+
+    </div>
+
+</div>
+</div>        
+        <!--Contenedor de las cartas-->
+<div class="  md:flex-row flex flex-col p-5 m-5" >
+    <section class="card border-red-400" style="margin-left:0%">
+            <img alt="IMAGEN 1 NO ENCONTRADA" src="https://raw.githubusercontent.com/gustavo-exe/ElementoDeProductoFord/Main/img_src/FordRangerLimited.png"/>
+        <h3 class="TextCard"> Ranger Limit  <span>$200,000</span> </h3> 
     </section>
+
+    <section class="card" style="margin-left:auto">
+            <img alt="IMAGEN 2 NO ENCONTRADA" src="https://raw.githubusercontent.com/gustavo-exe/ElementoDeProductoFord/Main/img_src/Ford%20Ranger%20Wildtrak.png"/>
+        <h3 class="TextCard"> Ranger Wildtrak <span>$200,000</span> </h3> 
+    </section>
+
+    <section class="card" style="margin-left:auto">
+        <img alt="IMAGEN 3 NO ENCONTRADA" src="https://raw.githubusercontent.com/gustavo-exe/ElementoDeProductoFord/Main/img_src/FordRangerXL.png"/>
+        <h3  class="TextCard"> Ranger XL <span>$200,000</span> </h3> 
+    </section>
+</div>
   </main>
   <footer class=" bg-blue-900 text-white">
     <section class="flex flex-col ">
