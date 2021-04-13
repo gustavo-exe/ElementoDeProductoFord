@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css"/>
+    <title>About</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <header>
+      <div class="relative bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex justify-between items-start md:items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="#">
+                <span class="sr-only">Workflow</span>
+                <img class="h-8 w-auto sm:h-10 rounded-full" src="https://raw.githubusercontent.com/gustavo-exe/ElementoDeProductoFord/Main/img_src/LogoFord.png" alt="">
+              </a>
+            </div>
+            <nav class="hidden block md:flex" id="menu">
+              <a href="index.html" class="mx-8 md:mx-0 text-base font-medium text-gray-500 block px-3 py-2 hover:text-gray-900">
+                Financiación
+              </a>
+              <a href="#" class="mx-8 md:mx-0 text-base font-medium text-gray-500 block px-3 py-2 hover:text-gray-900">
+                Vehiculos
+              </a>
+              <a href="contact.html" class="mx-8 md:mx-0 text-base font-medium text-gray-500 block px-3 py-2 hover:text-gray-900">
+                Compra
+              </a>
+              <div class="block md:relative py-2 px-3 mx-8 md:mx-0" >
+                <button type="button" id=morebtn
+                  class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  <span>Clientes</span>
+                </button>
+              </div>
+            </nav>
+            <div id="secmenu" class="hidden block md:flex md:flex-row items-center md:justify-end md:flex-1 lg:w-0">
+              <a href="#"
+                class="w-100 md:ml-6 mb-4 md:mb-0 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-gray bg-gray-200 hover:bg-gray-300">
+                Iniciar
+              </a>
+              <a href="#"
+                class="w-100 md:ml-6 mb-4 md:mb-0 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-300 hover:bg-blue-400">
+                Crear Cuenta
+              </a>
+            </div>
+            <div class="-mr-2 -my-2 md:hidden">
+              <button type="button" id="menubtn"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <span class="sr-only">Open menu</span>
+                <svg class="h-6 w-6" id="openSVG" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="h-6 w-6 hidden" id="closeSVG"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          let menu = document.getElementById("menu");
+          let secmenu = document.getElementById("secmenu");
+          let closeSVG = document.getElementById("closeSVG");
+          let openSVG = document.getElementById("openSVG");
+      
+          document.getElementById("menubtn").addEventListener("click", 
+            function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              menu.classList.toggle("hidden");
+              secmenu.classList.toggle("hidden");
+              closeSVG.classList.toggle("hidden");
+              openSVG.classList.toggle("hidden");
+            }
+          );
+        })
+      </script>
+  </header>
+  <main class="container mx-auto flex-grow">
+        <!--Contenedor de la imagen y la informacion-->
+<!--
+    Contenedor de la imagen e informacion
+-->
+
+<div  class=" m-5 md:flex-col lg:flex-row flex flex-col  p-5" >
+    <!--El style es para que se vea el contenedor-->
+<!--
+    Use flex-1 para que abarque el espacio del contenedor si se agraga otro tiene
+    que ser igual(flex-1) para que compartan el mismo espacio
+-->
+<div class="flex-1 flex  items-center m-2 bg-white-400">
+    <img src="https://github.com/gustavo-exe/ElementoDeProductoFord/blob/Main/img_src/FordRanger.jpg?raw&#x3D;true" alt="RAPTOR">
+</div>    
+    <!--Aqui tiene que ir el de informacion-->
+<div class="flex-1 m-2 p-10 bg-gray-100">
+    <!--Div para la descripcion-->
+    <div>
+    <!--Usando br y p para saltos de linea-->
+
+        <h1 class="text-4xl" >Ford<span class="font-bold"> Ranger Raptor</span></h1><br>
+        <p class="md:text-3xl md:my-5" style="">
+            No es una pick-up normal y corriente. Es una pick-up completamente excepcional. 
+        Se ha creado para ofrecer al maximo renidimiento todoterreno. Un vehiculo diseñado 
+        desde cero para dominar cualquier entorno es inigualable.
+        </p>
+        <p class="font-bold my-5 text-2xl">
+            $200,000
+        </p> 
+
+    </div>
+    <!--Div para los botones de agregar y comprar golem.-->
+    <div class=" items-center flex flex-row " >
+        <!-- Boton comprar-->
+        <button href="#" class=" w-90 border  rounded shadow-sm text-base font-medium text-white p-3 bg-blue-300  " >
+            Comprar
+        </button>
+        <!-- Boton Agregar-->
+        <button href="#" class=" font-bold mx-4 rounded-full h-12 w-12  bg-blue-300 text-white" >
+            +
+        </button>
+
+    </div>
+
+</div>
+</div>        
+        <!--Contenedor de las cartas-->
+<div class="  md:flex-row flex flex-col p-5 m-5" >
+    <section class="card border-red-400" style="margin-left:0%">
+            <img alt="IMAGEN 1 NO ENCONTRADA" src="https://raw.githubusercontent.com/gustavo-exe/ElementoDeProductoFord/Main/img_src/FordRangerLimited.png"/>
+        <h3 class="TextCard"> Ranger Limit  <span>$200,000</span> </h3> 
+    </section>
+
+    <section class="card" style="margin-left:auto">
+            <img alt="IMAGEN 2 NO ENCONTRADA" src="https://raw.githubusercontent.com/gustavo-exe/ElementoDeProductoFord/Main/img_src/Ford%20Ranger%20Wildtrak.png"/>
+        <h3 class="TextCard"> Ranger Wildtrak <span>$200,000</span> </h3> 
+    </section>
+
+    <section class="card" style="margin-left:auto">
+        <img alt="IMAGEN 3 NO ENCONTRADA" src="https://raw.githubusercontent.com/gustavo-exe/ElementoDeProductoFord/Main/img_src/FordRangerXL.png"/>
+        <h3  class="TextCard"> Ranger XL <span>$200,000</span> </h3> 
+    </section>
+</div>
+  </main>
+  <footer class=" bg-blue-900 text-white">
+    <section class="flex flex-col ">
+    
+    <section class="flex flex-col text-center justify-between items-center p-8">
+      © 2021 Ford Motor Company
+    </section>
+    
+    </section>
+  </footer>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
